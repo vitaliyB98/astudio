@@ -5,7 +5,23 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "composer/installers": "^1.0.24",
-        "wikimedia/composer-merge-plugin": "^1.4"
+	"cweagans/composer-patches": "^1.6",
+        "wikimedia/composer-merge-plugin": "^1.4",
+        "drupal/bootstrap": "^3.16",
+        "drupal/admin_toolbar": "^1.25",
+        "drupal/viewfield": "^3.0@alpha",
+        "drupal/ds": "^3.2",
+        "drupal/webform": "^5.0@RC",
+        "drupal/page_manager": "^4.0@beta",
+        "drupal/simple_gmap": "^1.4",
+        "drupal/copyright_block": "^1.0@RC",
+        "drupal/social_media_links": "^2.6",
+        "bower-asset/photoswipe": "^4.1",
+        "drupal/field_group": "^1.0",
+        "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/juicebox": "^2.0@beta",
+        "drupal/languageicons": "^1.0@beta",
+        "drupal/core": "^8.6"
     },
     "replace": {
         "drupal/core": "^8.6"
@@ -17,6 +33,11 @@
         "autoloader-suffix": "Drupal8"
     },
     "extra": {
+	"patches": {
+            "drupal/languageicons": {
+                "Fixed error.": "https://www.drupal.org/files/issues/0001-Access-protected-id-via-getId-function.patch"     
+            }
+        },
         "_readme": [
             "By default Drupal loads the autoloader from ./vendor/autoload.php.",
             "To change the autoloader you can edit ./autoload.php.",
@@ -39,7 +60,8 @@
             "themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"],
             "modules/custom/{$name}": ["type:drupal-custom-module"],
-            "themes/custom/{$name}": ["type:drupal-custom-theme"]
+            "themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "libraries/{$name}": ["type:drupal-library", "bower-asset/photoswipe"]
         }
     },
     "autoload": {
@@ -61,6 +83,18 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+	{
+      	  "type": "package",
+          "package": {
+            "name": "bower-asset/photoswipe",
+            "version": "4.1.1",
+            "type": "drupal-library",
+            "dist": {
+              "url": "https://github.com/dimsemenov/PhotoSwipe/archive/v4.1.1.zip",
+              "type": "zip"
+            }
+          }
         }
     ]
 }

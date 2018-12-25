@@ -1,0 +1,20 @@
+.region-top {
+	display: flex;
+	flex-direction: column;
+
+	a {
+		text-align: center;
+	}
+}
+
+.block-views-blockmain-article-block-photo-gallery {
+	ul {
+		list-style: none;
+	}
+}
+
+.block-views-blockmain-article-block-main-photo {
+	img {
+		width: 100%;
+	}
+}

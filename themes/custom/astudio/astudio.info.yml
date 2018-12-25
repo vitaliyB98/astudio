@@ -1,0 +1,27 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: 'astudio'
+description: 'Uses the Bootstrap framework Sass source files and must be compiled (not for beginners).'
+package: 'Bootstrap'
+
+regions:
+  top: 'Top'
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer first column'
+  footer_second: 'Footer second column'
+  footer_third: 'Footer third column'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries-extend:
+  bootstrap/framework:
+    - astudio/framework

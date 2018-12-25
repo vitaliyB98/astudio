@@ -1,0 +1,15 @@
+ul.menu--main {
+	&>li {
+		width: 200px;
+		text-align: center;
+
+		a.is-active {
+			background: $green-main;
+		}
+	}
+}
+
+#block-astudio-main-menu {
+	display: flex;
+	justify-content: center;
+}
