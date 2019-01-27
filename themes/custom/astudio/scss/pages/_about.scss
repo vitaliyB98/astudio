@@ -1,0 +1,85 @@
+.page-node-6 {
+  .region-content {
+    max-width: 1243px;
+    margin: 0 auto;
+    margin-top: 2vh;
+    .layout--twocol-bricks {
+      font-family: $muli-font;
+      .layout__region--top {
+        margin-bottom: 7px;
+        background-color: #2f4f4f;
+        padding: 7px;
+        color: $white;
+      }
+      .layout__region--first-above {
+        flex: 0 1 calc( 33.33333% - 7px );
+        position: relative;
+        margin-right: 7px;
+        background-color: #2f4f4f;
+        &::after {
+          content: '';
+          display: block;
+          z-index: 10;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          background-image: url("../images/vector.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          opacity: 0.05;
+          top: calc( 98% - 50px );
+          left: calc( 98% - 50px );
+        }
+        .field--type-text-with-summary {
+          padding: 20px 7px 7px 15px;
+          font-size: 1.6rem;
+          color: $white;
+        }
+      }
+      .layout__region--second-above {
+        flex: 0 1 66.66666%;
+        .field--name-field-image {
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .layout__region--middle {
+        flex: 0 1 100%;
+        margin-top: 7px;
+        padding: 25px 7px 15px 7px;
+        background-color: #2f4f4f;
+        li.col-sm-3 {
+          list-style: none;
+          .views-field-field-image {
+            img {
+              margin: 0 auto;
+              background-color: $white;
+              padding: 2.5px;
+            }
+          }
+          .views-field-title {
+            margin-top: 5px;
+            text-align: center;
+            font-family: $poiret-font;
+            font-size: 2rem;
+            font-weight: bold;
+            a {
+              color: $white;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+          .views-field-field-position {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.2);
+          }
+        }
+        .row {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.path-contacts {
+  .main-container {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1243px;
+    padding-top: 17vh;
+    min-height: calc( 85vh - 46px );
+    .row {
+      padding: 0;
+      margin: 0;
+      div[role='heading'] {
+        display: none;
+      }
+      & > section {
+        padding: 0;
+      }
+      .block-region-top {
+        .block-block-content {
+          margin-bottom: 7px;
+        }
+        .block-webform {
+          // Markup
+          .form-type-webform-markup {
+            background-color: $green_light_color;
+            padding: 7px;
+            font-family: $poiret-font;
+            color: $white;
+            font-size: 1.7rem;
+            font-weight: bold;
+            margin-bottom: 7px;
+          }
+          // Form
+          #edit-wrapper {
+            & > div:nth-child(1),
+            & > div:nth-child(2) {
+              .form-item {
+                position: relative;
+                label {
+                  position: relative;
+                  margin: 0;
+                  letter-spacing: 5px;
+                  top: 26px;
+                  left: 15px;
+                  color: $gray_hard_color;
+                  font-family: $poiret-font;
+                  transition: .5s;
+                  &::after {
+                    display: none;
+                  }
+                }
+                input,
+                textarea {
+                  box-shadow: 0 0 0 0;
+                  border: 1px $gray_hard_color solid;
+                }
+                &.active {
+                  label {
+                    top: 0;
+                    left: 0;
+                  }
+                }
+              }
+            }
+            & > div:nth-child(3) {
+              margin-top: 18px;
+              .txtNew {
+                text-align: center;
+                p:nth-child(4) {
+                  display: none;
+                }
+              }
+            }
+          }
+          // Button
+          #edit-actions {
+            text-align: center;
+            .webform-button--submit {
+              margin: 0;
+              padding: 10px 25px;
+              font-size: 2.5rem;
+              font-family: $poiret-font;
+              font-weight: bold;
+              background-color: $gray_hard_color;
+              box-shadow: 0 0 0 0;
+              border: 3px transparent solid;
+              border-radius: 25px;
+              transition: .3s;
+              &:hover {
+                background-color: transparent;
+                border-color: $gray_hard_color;
+                color: $gray_hard_color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,3 +6,18 @@
 
 // Base-theme overrides.
 @import 'overrides';
+
+@import 'outher_scss_file/fonts';             // Fonts;
+@import 'outher_scss_file/variables';         // Variables;
+@import 'outher_scss_file/animation';         // Animation;
+
+// Import Block Files
+@import "blocks/all_page_style";              // Global styles;
+@import 'blocks/header';                      // Block header;
+@import 'blocks/footer';                      // Block footer;
+
+// Import Page Files.
+@import 'pages/front_page';                   // Front Page;
+@import 'pages/about';                        // Page About us;
+@import 'pages/projects';                     // Page Projects;
+@import 'pages/contacts';                     // Page Contscts;

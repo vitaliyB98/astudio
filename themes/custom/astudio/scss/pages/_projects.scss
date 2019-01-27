@@ -1,0 +1,111 @@
+.path-projects {
+  .main-container {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1243px;
+    min-height: calc( 85vh - 45px );
+    padding-top: 17vh;
+    & > .row {
+      margin: 0;
+    }
+    .region-content {
+      .block-views {
+        .view-project {
+          .view-header {
+            padding: 7px;
+            margin-bottom: 7px;
+            background-color: $green_light_color;
+            p {
+              display: none;
+            }
+            h2 {
+              font-family: $poiret-font;
+              font-weight: bold;
+              a {
+                color: $white;
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+          .view-content {
+            margin-bottom: 7px;
+            .row {
+              margin: 0;
+              padding: 15px 7px;
+              //background-color: $gray_hard_color;
+              ul {
+                margin: 0;
+                padding: 0;
+                li {
+                  list-style: none;
+                  padding: 0 3.5px 0 3.5px;
+                  transition: 1s;
+                  overflow: hidden;
+                  clip-path: polygon(0 0%, 100% 15%, 100% 100%, 0 85%);
+                  &:hover {
+                    img {
+                      transform: scale(1.05);
+                    }
+                  }
+                  .views-field-field-image {
+                    img {
+                      width: 100%;
+                      transition: 1s;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .view-footer {
+            margin-bottom: 15px;
+            background-color: $green_logo_color;
+            a {
+              position: relative;
+              display: block;
+              padding: 7px;
+              color: $white;
+              font-size: 1.7rem;
+              font-family: $poiret-font;
+              &::after {
+                position: absolute;
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-image: url("/themes/custom/astudio/images/right-arrows-couple.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: .4s;
+                top: calc( 50% - 10px);
+                left: -20px;
+              }
+              &:hover {
+                text-decoration: none;
+                font-weight: bold;
+                &::after {
+                  top: calc( 50% - 10px);
+                  left: calc( 100% - 30px);
+                }
+              }
+            }
+          }
+        }
+      }
+      // Public Project
+      //.block-views-blockproject-block-public-project-teaser {
+      //  .view-project {
+      //
+      //  }
+      //}
+      // Private Project
+      .block-views-blockproject-block-private-project-teaser {
+        .view-footer {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}
