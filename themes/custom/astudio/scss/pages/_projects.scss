@@ -14,7 +14,7 @@
           .view-header {
             padding: 7px;
             margin-bottom: 7px;
-            background-color: $green_light_color;
+            background-color: $dark_green_color;
             p {
               display: none;
             }
@@ -34,7 +34,6 @@
             .row {
               margin: 0;
               padding: 15px 7px;
-              //background-color: $gray_hard_color;
               ul {
                 margin: 0;
                 padding: 0;
@@ -60,12 +59,14 @@
             }
           }
           .view-footer {
-            margin-bottom: 15px;
-            background-color: $green_logo_color;
+            background-color: $dark_green_color;
+            width: fit-content;
+            text-align: center;
+            margin: 0 auto 10px;
             a {
               position: relative;
               display: block;
-              padding: 7px;
+              padding: 10px 35px;
               color: $white;
               font-size: 1.7rem;
               font-family: $poiret-font;
