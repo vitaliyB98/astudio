@@ -1,0 +1,160 @@
+.path-frontpage {
+  margin: 0;
+  .main-container {
+    padding: 0;
+  }
+  .row {
+    max-width: 1243px;
+    margin: 0 auto;
+    margin-top: 17vh;
+    & > section,
+    & > aside {
+      padding: 0;
+    }
+    // Left Sidebar
+    aside {
+      padding-left: 7px;
+      font-family: $poiret-font;
+      // Text Top Block
+      .block-views-blockmain-article-block-main-text {
+        .views-row {
+          .views-field-title {
+            text-align: center;
+            padding: 10px 0;
+            color: $white;
+            background-color: $dark_green_color;
+          }
+          .views-field-body {
+            font-size: 2rem;
+          }
+          .views-field-view-node {
+            margin-bottom: 7px;
+            font-size: 1.75rem;
+            background-color: $dark_green_color;
+            a {
+              position: relative;
+              color: $white;
+              font-size: 2.5rem;
+              padding: 7px;
+              display: inline-block;
+              width: 100%;
+              margin-bottom: -7px;
+              transition: .3s;
+              overflow: hidden;
+              &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: calc( 50% - 10px);
+                left: -30px;
+                width: 20px;
+                height: 20px;
+                transition: .4s;
+                background-image: url("/themes/custom/astudio/images/right-arrows-couple.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+              &:hover {
+                text-decoration: none;
+                &::after {
+                  left: calc( 100% - 45px );
+                }
+              }
+            }
+          }
+        }
+      }
+      // Contacts
+      #block-astudio-blokzkontaktami {
+        margin-top: 7px;
+        background-color: $dark_green_color;
+        text-align: center;
+        font-size: 2.25rem;
+        font-weight: bold;
+        padding: 7px;
+        overflow: auto;
+        a {
+          color: $white;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    // Left Section
+    section {
+      .block-views-blockmain-article-block-main-photo {
+
+      }
+      // Block Title for two block
+      #block-astudio-otlichnyydizaynnezameten {
+        margin-top: 7px;
+        width: 100%;
+        .block-title {
+          color: $white;
+          float: left;
+          padding: 7px;
+          font-family: $poiret-font;
+          background-color: $dark_green_color;
+          width: 75%;
+        }
+        .field--name-field-link {
+          float: left;
+          width: calc( 25% - 7px );
+          margin-left: 7px;
+          overflow: hidden;
+          line-height: 33px;
+          font-family: $muli-font;
+          background-color: $dark_green_color;
+          a {
+            font-size: 1.4rem;
+            color: $white;
+            position: relative;
+            display: inline-block;
+            text-overflow: ellipsis;
+            width: 100%;
+            padding: 7px;
+            &::after {
+              position: absolute;
+              content: '';
+              display: block;
+              width: 10px;
+              height: 10px;
+              background-image: url("/themes/custom/astudio/images/right-arrows-couple.svg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              transition: .4s;
+              top: calc( 50% - 5px);
+              left: -10px;
+            }
+            &:hover {
+              text-decoration: none;
+              font-weight: bold;
+              &::after {
+                top: calc( 50% - 5px);
+                left: calc( 100% - 10px - 15px );
+              }
+            }
+          }
+        }
+      }
+      // Two Block (galery)
+      .block-views-blockmain-article-block-photo-gallery {
+        margin-top: 7px;
+        .row {
+          padding: 0;
+          margin: 0;
+          li {
+            padding: 0;
+          }
+          li:nth-child(1) {
+            padding-right: 7px;
+          }
+        }
+      }
+    }
+    .views-element-container.form-group {
+      display: none;
+    }
+  }
+}

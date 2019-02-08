@@ -1,0 +1,15 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+h2 {
+  margin: 0 !important;
+}
+
+// ClearFix
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

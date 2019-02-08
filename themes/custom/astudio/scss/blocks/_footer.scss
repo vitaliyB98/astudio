@@ -1,0 +1,12 @@
+footer.footer {
+  background-color: $gray_hard_color;
+  color: #fff;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  .row {
+    margin-top: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
