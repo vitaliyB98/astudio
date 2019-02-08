@@ -1,0 +1,25 @@
+article.project {
+  margin: 15px -15px 0 -15px;
+  .jcbx-glry-classic {
+    background-color: $white !important;
+    .jb-dt-main-image {
+      width: 50% !important;
+      left: calc( 50% - 25% ) !important;
+      height: auto !important;
+      img {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  }
+  .jb-area-caption {
+    //background-color: red;
+    top: calc(100% - 250px) !important;
+    left: 25% !important;
+    width: 50% !important;
+    .jb-cap-frame {
+      width: 100% !important;
+      left: 0 !important;
+    }
+  }
+}
